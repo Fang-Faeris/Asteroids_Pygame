@@ -15,6 +15,8 @@ def main():
             if event.type == pygame.QUIT:
                 return
 
+        player.update(dt)
+
         screen.fill("black")
         player.draw(screen)
         pygame.display.flip()
@@ -25,4 +27,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
